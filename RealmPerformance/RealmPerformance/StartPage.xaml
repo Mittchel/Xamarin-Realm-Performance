@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealmPerformance.StartPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Count" Clicked="CountItem_Clicked"  Order="Primary" Priority="0" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal" HeightRequest="100" HorizontalOptions="FillAndExpand">
+                <Button HeightRequest="100" Text="1K Insert" HorizontalOptions="FillAndExpand" Clicked="ThousandInsert_Clicked"/>
+                <Button HeightRequest="100" Text="10K Insert" HorizontalOptions="FillAndExpand" Clicked="TenThousandInsert_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="100" HorizontalOptions="FillAndExpand">
+                <Button HeightRequest="100" Text="1K Query" HorizontalOptions="FillAndExpand" Clicked="QueryTenThousand_Clicked" />
+                <Button HeightRequest="100" Text="100K Query" HorizontalOptions="FillAndExpand" Clicked="QueryHundredThousand_Clicked" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="100" HorizontalOptions="FillAndExpand">
+                <Button HeightRequest="100" Text="Listview example" HorizontalOptions="FillAndExpand" />
+                <Button HeightRequest="100" Text="Test results" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
