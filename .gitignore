@@ -8,6 +8,9 @@
 *.sln.docstates
 *.apk
 
+#Fody
+Tools/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
